@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <video autoPlay loop playsInline className="background-video">
+      <video autoPlay loop muted playsInline className="background-video">
         <source src="/frontal.mp4" type="video/mp4" />
         <source src="/frontal.webm" type="video/webm" />
         Tu navegador no soporta el elemento de video.
