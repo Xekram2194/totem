@@ -1,0 +1,102 @@
+/* Fondo y estructura general */
+.info-page {
+    background-color: #003b6f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Logo centrado */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    max-width: 200px;
+  }
+  
+  /* Estilos de las tarjetas */
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-header {
+    background-color: #00a8ff; /* Color superior del card */
+    padding: 60px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .car-title{
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .card-label {
+    margin-top: -10px;
+  }
+  
+  .card-label span {
+    background-color:#0074ff;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .info-button2 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #194d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .info-button2:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsivo para pantallas más grandes */
+  @media (min-width: 600px) {
+    .section {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
