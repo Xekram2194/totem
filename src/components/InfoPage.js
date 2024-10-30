@@ -6,7 +6,7 @@ import useInactivityRedirect from '../hooks/useInactivityRedirect'; // Importamo
 import logo from '../assets/logo.png'; // Ruta hacia la imagen
 
 function InfoPage() {
-//   useInactivityRedirect(60000); // Redirigir al Home después de 1 minuto de inactividad
+  useInactivityRedirect(60000); // Redirigir al Home después de 1 minuto de inactividad
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
